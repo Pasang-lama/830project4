@@ -1,0 +1,28 @@
+header {
+    .top-header{
+        background-color: $primary-color;
+    }
+    .navbar{
+        img{
+            height: 40px;
+        }
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    text-transform: uppercase;
+                    font-family: $secondary-font;
+                    font-size: 13px;
+                    color: #444444;
+                    font-weight: 500;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+         
+        }
+        .custom-btn{
+            background-color: $primary-color;
+        }
+    }
+}
