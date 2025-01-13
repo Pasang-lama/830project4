@@ -30,6 +30,31 @@ body {
   color: #444444;
 }
 
+.custom-btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: #3FBBC0;
+  border-radius: 3px;
+  border: none;
+  text-transform: capitalize;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 3px;
+  width: 100px;
+  background-color: #3FBBC0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 header .top-header {
   background-color: #3FBBC0;
 }
@@ -46,6 +71,107 @@ header .navbar .navbar-nav .nav-item .nav-link {
 header .navbar .navbar-nav .nav-item .nav-link:hover {
   color: #3FBBC0;
 }
-header .navbar .custom-btn {
+
+.banner-slider img {
+  height: 70vh;
+}
+.banner-slider .carousel-indicators button {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.banner-slider .carousel-indicators button.active {
   background-color: #3FBBC0;
+}
+.banner-slider .carousel-item .carousel-caption {
+  border-top: 6px solid #3FBBC0;
+  background-color: rgba(255, 255, 255, 0.734);
+  padding: 20px;
+  color: #444;
+  bottom: 15%;
+}
+.banner-slider .carousel-item .carousel-caption h5 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.banner-slider .carousel-item .carousel-caption .custom-btn {
+  margin-top: 10px;
+}
+.banner-slider .carousel-control-prev .carousel-control-prev-icon, .banner-slider .carousel-control-prev .carousel-control-next-icon, .banner-slider .carousel-control-next .carousel-control-prev-icon, .banner-slider .carousel-control-next .carousel-control-next-icon {
+  background-color: #9b9b9b;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-size: 20px;
+}
+.banner-slider .carousel-control-prev:hover .carousel-control-prev-icon, .banner-slider .carousel-control-prev:hover .carousel-control-next-icon, .banner-slider .carousel-control-next:hover .carousel-control-prev-icon, .banner-slider .carousel-control-next:hover .carousel-control-next-icon {
+  background-color: #3FBBC0;
+}
+
+.fearure-section .feaure-card {
+  background-color: white;
+  position: relative;
+}
+.fearure-section .feaure-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #3FBBC0;
+  transition: all 0.2s linear;
+  z-index: 0;
+}
+.fearure-section .feaure-card .content {
+  position: relative;
+  z-index: 1;
+}
+.fearure-section .feaure-card:hover {
+  color: white;
+}
+.fearure-section .feaure-card:hover i {
+  color: white;
+}
+.fearure-section .feaure-card:hover::before {
+  height: 100%;
+}
+.fearure-section .feaure-card i {
+  color: #3FBBC0;
+}
+.fearure-section .feaure-card h2 {
+  font-size: 18px;
+}
+.fearure-section .feaure-card p {
+  font-size: 14px;
+}
+
+.emergency-block {
+  background-color: #3FBBC0;
+}
+
+.about-us ul {
+  margin-top: 20px;
+}
+.about-us ul li {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+.about-us ul li i {
+  color: #3FBBC0;
+}
+
+.counter-section .shadow {
+  font-family: "Raleway", serif;
+}
+.counter-section .shadow i {
+  color: #3FBBC0;
+  font-size: 50px;
+}
+.counter-section .shadow h3 {
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Roboto", serif;
 }/*# sourceMappingURL=style.css.map */

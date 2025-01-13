@@ -25,3 +25,30 @@ body{
     font-weight: 400;
     color: #444444;
 }
+
+.custom-btn{
+    padding: 10px 20px;
+    color: white;
+    background-color: $primary-color;
+    border-radius: 3px;
+    border: none;
+    text-transform: capitalize;
+}
+
+.section-header{
+    h2{
+        font-size: 36px;
+        position: relative;
+        padding-bottom: 10px;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            height: 3px;
+            width: 100px;
+            background-color: $primary-color;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

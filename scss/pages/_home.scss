@@ -1,0 +1,123 @@
+.banner-slider {
+    img {
+        height: 70vh;
+    }
+    .carousel-indicators{
+        button{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            &.active{
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .carousel-item {
+        .carousel-caption {
+            border-top: 6px solid $primary-color;
+            background-color: rgba(255, 255, 255, 0.734);
+            padding: 20px;
+            color: #444;
+            bottom: 15%;
+            h5{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .custom-btn{
+                margin-top: 10px;
+            }
+        }
+    }
+    .carousel-control-prev, .carousel-control-next{
+        .carousel-control-prev-icon, .carousel-control-next-icon{
+            background-color: #9b9b9b;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-size: 20px;
+          
+
+        }
+        &:hover{
+            .carousel-control-prev-icon, .carousel-control-next-icon{
+            background-color: $primary-color;
+            }
+        }
+    }
+}
+
+.fearure-section{
+    .feaure-card{
+        background-color: white;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 0%;
+            width: 100%;
+            background-color: $primary-color;
+            transition: all 0.2s linear;
+            z-index: 0;
+        }
+        .content{
+            position: relative;
+            z-index: 1;
+        }
+        &:hover{
+            color: white;
+            i{
+                color: white;
+            }
+            &::before{
+                height: 100%;
+            }
+        }
+        i{
+            color: $primary-color;
+        }
+        h2{
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+.emergency-block{
+   background-color: $primary-color;
+}
+
+.about-us{
+    ul{
+        margin-top: 20px;
+
+        li{
+            display: flex;
+            gap: 5px;
+            padding-bottom: 10px;
+            i{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.counter-section{
+    .shadow{
+        font-family: $ternary-font;
+        i{
+            color: $primary-color;
+            font-size: 50px;
+        }
+        h3{
+        margin-bottom: 0;
+        font-size: 36px;
+        font-weight: 600;
+        font-family: $primary-font;
+        }
+    }
+}
