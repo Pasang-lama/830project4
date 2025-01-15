@@ -174,4 +174,56 @@ header .navbar .navbar-nav .nav-item .nav-link:hover {
   font-size: 36px;
   font-weight: 600;
   font-family: "Roboto", serif;
+}
+
+.services-card .icon {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  color: #3FBBC0;
+  font-size: 40px;
+}
+.services-card h3 {
+  color: #3FBBC0;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.services-card h3::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #3FBBC0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+}
+
+.department .nav {
+  border-right: 1px solid #ccc;
+  width: 450px;
+}
+.department .nav .nav-link {
+  background-color: transparent;
+  font-weight: 600;
+  color: #000;
+  text-align: left;
+  border-radius: 0;
+}
+.department .nav .nav-link.active {
+  color: #3FBBC0;
+  border-right: 2px solid #3FBBC0;
+}
+.department .tab-content h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.department .tab-content em {
+  margin-bottom: 20px;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

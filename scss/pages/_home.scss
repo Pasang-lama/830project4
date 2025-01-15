@@ -121,3 +121,61 @@
         }
     }
 }
+
+.services-card{
+    .icon{
+        height: 80px;
+        width: 80px;
+        background-color: white;
+        color: $primary-color;
+        font-size: 40px;
+    }
+    h3{
+        color: $primary-color;
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        &::before{
+            content: "";
+            width: 100px;
+            height: 2px;
+            background-color: $primary-color;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0px;
+        }
+    }
+}
+
+.department{
+    .nav{
+        border-right: 1px solid #ccc;
+        width: 450px;
+        .nav-link{
+       background-color: transparent;
+            font-weight: 600;  
+            color: #000; 
+            text-align: left;
+            border-radius: 0;
+            &.active{
+                color: $primary-color;
+                border-right: 2px solid $primary-color;
+            }
+        }
+    }
+    .tab-content{
+        h3{
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        em{
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    }
+}
